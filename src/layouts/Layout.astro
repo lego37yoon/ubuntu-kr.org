@@ -81,8 +81,8 @@ const tw = {
             document
                 .querySelectorAll(".auto-format-datetime")
                 .forEach((element) => {
-                    element.innerHTML = new Date(
-                        element.innerHTML,
+                    element.textContent = new Date(
+                        element.textContent.trim()
                     ).toLocaleString();
                 });
         </script>
